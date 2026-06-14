@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghaisann — Portfolio Web</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background: #fafafa;
+    }
+    .container { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
+    nav {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid #eaeaea;
+      background: #fff;
+    }
+    nav .container { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-weight: 700; font-size: 1.2rem; }
+    nav ul { display: flex; gap: 1.5rem; list-style: none; }
+    nav a { color: #555; text-decoration: none; font-size: 0.95rem; }
+    nav a:hover { color: #000; }
+
+    section { padding: 4rem 0; }
+    .hero { padding: 6rem 0; text-align: center; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .hero p { color: #666; font-size: 1.1rem; max-width: 500px; margin: 0 auto; }
+
+    h2 { font-size: 1.75rem; margin-bottom: 1.5rem; }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .project-card {
+      background: #fff;
+      padding: 1.5rem;
+      border: 1px solid #eaeaea;
+      border-radius: 8px;
+    }
+    .project-card h3 { margin-bottom: 0.5rem; }
+    .project-card p { color: #666; font-size: 0.95rem; margin-bottom: 1rem; }
+    .project-card a { color: #0070f3; text-decoration: none; font-size: 0.9rem; }
+
+    .contact a {
+      display: inline-block;
+      margin-right: 1rem;
+      color: #0070f3;
+      text-decoration: none;
+    }
+
+    footer {
+      padding: 2rem 0;
+      text-align: center;
+      color: #888;
+      font-size: 0.9rem;
+      border-top: 1px solid #eaeaea;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2rem; }
+      nav ul { gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <div class="logo">Ghaisann.</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <h1>Hai, aku Ghaisan 👋</h1>
+      <p>Mahasiswa ITB yang saat ini sedang menjalani mata kuliah dasar rekayasa perangkat lunak.</p>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>Tentang Aku</h2>
+      <p>Aku mahasiswa yang sedang menjalani perkuliahan di jurusan Sistem dan Teknologi Informasi. Senang belajar hal baru dan suka memecahkan masalah lewat kode. Saat ini aku tertarik dengan teknologi dan segala perkembangan yang sedang terjadi didalamnya.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Proyek</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Proyek Satu</h3>
+          <p>Deskripsi singkat lorem ipsum.</p>
+          <a href="#">Read More →</a>
+        </div>
+        <div class="project-card">
+          <h3>Proyek Dua</h3>
+          <p>Deskripsi singkat lorem ipsum.</p>
+          <a href="#">Read More →</a>
+        </div>
+        <div class="project-card">
+          <h3>Proyek Tiga</h3>
+          <p>Deskripsi singkat lorem ipsum.</p>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Kontak</h2>
+      <p style="margin-bottom: 1rem; color: #666;">Mau ngobrol atau kolaborasi? Boleh banget.</p>
+      <a href="mailto:ghaisan.nufail2@gmail.com">Email</a>
+      <a href="https://github.com/ahihiho" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/ghaisan-nufail" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      © 2026 Ghaisann. DRPL 2026
+    </div>
+  </footer>
+</body>
+</html>
